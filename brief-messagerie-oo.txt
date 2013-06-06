@@ -1,0 +1,28 @@
+brief messagerie oo
+	
+Messagerie
+	- Le page principale affiche en pleine largeur la liste des derniers messages.
+	- Chaque message est dans un bloc, affiché en entier, avec la photo de l'auteur à gauche du message.
+	- Les messages envoyés par l'employé sont inclus dans cette liste, mais sa photo s'affiche plutôt à droite.
+	- Un indicateur visuel doit être ajouté aux messages non lus
+	- En cliquant sur une photo, on charge tous les messages échangés avec cet employé.
+	- les messages plus récents sont affichés d'abord. Seul 20 messages s'affichent.
+	- les messages suivants sont affichés par "infinite scrolling"
+	
+	- Le menu est au bas de l'écran, toujours présent, et n'affiche qu'un bouton : "composer un message"
+	- La fenêtre de composition doit s'ouvrir à partir du menu, comme si le dit-menu s'aggrandissait vers le haut.
+	- Il doit être possible d'envoyer un message à plusieurs employés d'un seul coup.
+		- La liste des employés (sélectionnables) doit donc être présentée près du champ de rédaction.
+	- Il doit être possible d'ajouter des liens, du gras, de l'italique et des couleurs de texte dans les messages.
+	- Il n'y a pas de champ sujet.
+	
+	- Tout est en ajax, aucun changement de page n'est possible, à l'exception de la page de login (voir plus loin).
+	- le php est oo.
+	
+	- une vérification automatique, à toutes les 10 secondes, doit détecter la présence de nouveau message, et les afficher.
+	
+Utilisateur
+	- Les utilisateurs sont des employés, créés directement dans la base de données. Il n'y a donc pas d'inscription.
+	- Un système de connexion est toutefois mis en place, avec un remember me obligatoire.
+	- Inutile de prévoir un système d'oubli de mot de passe : l'administrateur peut le changer dans la bdd et le renvoyer.
+	- Un système de logout est nécessaire.
