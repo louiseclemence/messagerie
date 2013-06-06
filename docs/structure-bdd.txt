@@ -1,0 +1,20 @@
+Extranet OO
+
+	employee
+		employee_id
+		email
+		first_name
+		last_name
+		title
+		picture
+		created_date
+		modified_date
+
+	message	
+		message_id
+		from_id
+		to_id
+		content
+		is_read
+		sent_date
+		read_date
